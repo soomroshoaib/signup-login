@@ -13,7 +13,7 @@ function Header() {
 
 
   return (
-    <div>
+    <div style={{background:'#fff'}}>
       <header>
         <nav>
           <h1>Strugbits Cloud</h1>

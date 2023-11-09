@@ -70,12 +70,12 @@ function Login() {
         <form>
           <div className='form_input'>
             <label>Email</label>
-            <input type='email' name='email' value={inpval.email} onChange={setval} id='email' placeholder='Enter your email'/>
+            <input style={{color:'white'}} type='email' name='email' value={inpval.email} onChange={setval} id='email' placeholder='Enter your email'/>
           </div>
           <div className='form_input'>
             <label htmlFor=''>Password</label>
             <div className='two'>
-            <input type={!pasShow ? "password" : "text"} onChange={setval} value={inpval.password} name='password' id='password' placeholder='Enter your password'/>
+            <input style={{color:'white'}} type={!pasShow ? "password" : "text"} onChange={setval} value={inpval.password} name='password' id='password' placeholder='Enter your password'/>
             <div className='showpass' onClick={()=> setpasShow(!pasShow)}>
               {!pasShow ? "Show" : "Hide"}
             </div>

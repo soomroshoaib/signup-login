@@ -75,16 +75,16 @@ function Register() {
         <form>
         <div className='form_input'>
             <label>Name</label>
-            <input type='text' name='fname' onChange={setval} value={inpval.fname} id='fname' placeholder='Enter your Name'/>
+            <input type='text' style={{color:'white'}} name='fname' onChange={setval} value={inpval.fname} id='fname' placeholder='Enter your Name'/>
           </div>
           <div className='form_input'>
             <label>Email</label>
-            <input type='email' name='email' onChange={setval} value={inpval.email} id='email' placeholder='Enter your email'/>
+            <input type='email' style={{color:'white'}} name='email' onChange={setval} value={inpval.email} id='email' placeholder='Enter your email'/>
           </div>
           <div className='form_input'>
             <label htmlFor=''>Password</label>
             <div className='two'>
-            <input type={!pasShow ? "password" : "text"} onChange={setval} value={inpval.password} name='password' id='password' placeholder='Enter your password'/>
+            <input style={{color:'white'}} type={!pasShow ? "password" : "text"} onChange={setval} value={inpval.password} name='password' id='password' placeholder='Enter your password'/>
             <div className='showpass' onClick={()=> setpasShow(!pasShow)}>
               {!pasShow ? "Show" : "Hide"}
             </div>
@@ -93,7 +93,7 @@ function Register() {
           <div className='form_input'>
             <label htmlFor=''>Confirm Password</label>
             <div className='two'>
-            <input type={!cpasShow ? "password" : "text"} onChange={setval} name='cpassword' value={inpval.cpassword} id='cpassword' placeholder='Enter your confirm password'/>
+            <input style={{color:'white'}} type={!cpasShow ? "password" : "text"} onChange={setval} name='cpassword' value={inpval.cpassword} id='cpassword' placeholder='Enter your confirm password'/>
             <div className='showpass' onClick={()=> setCpasShow(!cpasShow)}>
               {!pasShow ? "Show" : "Hide"}
             </div>
